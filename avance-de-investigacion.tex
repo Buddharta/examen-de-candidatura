@@ -87,16 +87,16 @@
 \section{Introducci\'on}
 \noindent Presento a continuaci\'on el temario y avances de las investigaciones realizadas durante los primeros cinco semestres 
 de mi precandidatura a estudiante doctoral como parte del proceso de examen de candidatura a doctorante.
-Durante el periodo indicado, tanto mi director de tesis (Dr. Santiago Alberto Verjovsky Sol\'a) como yo nos dedicamos a estudiar 
+Durante el periodo indicado, tanto Dr. Santiago Alberto Verjovsky Sol\'a (mi director de tesis) como yo nos dedicamos a estudiar
 foliaciones holomorfas $\mathfrak{F}$ cuyas hojas cumplan con ciertas propiedades geom\'etricas que permiten garantizar cierta regularidad en 
 la estructura del espacio de hojas de la foliaci\'on. Nos referimos a regularidad en el sentido de que normalmente el 
 espacio de hojas es topol\'ogicamente complejo (no Hausdorff), por lo que es necesario restringir el tipo de din\'amicas en las hojas 
 de la foliaci\'on para garantizar cierta regularidad topol\'ogica en el espacio de hojas. Un ejemplo de estas propiedades es el caso de foliaciones cuyas hojas tengan 
 vol\'umenes acotados en variedades de K\"ahler $(M,h)$. 
 La base hist\'orica de estudiar foliaciones con volumen acotado proviene de trabajos previos hechos por matem\'aticos como
-Epstein, Edwards, Millet, Reeb, Sullivan, Haeflinger, J.C. Alexander y el mismo Dr.Verjovsky, entre otros, v\'ease \cite{Epstein1}, \cite{Epstein2}, \cite{EMS}, \cite{E-V}, \cite{V-A}. 
+Epstein, Edwards, Millet, Reeb, Sullivan, Haeflinger, J.C. Alexander y el mismo Dr.Verjovsky, entre otros, v\'eanse \cite{EMS}, \cite{V-A}, \cite{E-V}, \cite{Epstein1}, \cite{Epstein2}.
 Sin embargo, la investigaci\'on que hemos propuesto hasta ahora se encuentra apoyada por el trabajo previo de J.C. Alexander y el 
-Dr.Verjovsky \cite{V-A} el cual a su vez se basa en trabajos de Erret Bishop \cite{Bishop} sobre extensiones y l\'imites de Hausdorff 
+Dr.Verjovsky \cite{A-V} el cual a su vez se basa en trabajos de Erret Bishop \cite{Bishop} sobre extensiones y l\'imites de Hausdorff
 de sucesiones de variedades anal\'iticas y sigue el esp\'iritu de la presentaci\'on de los resultados de Bishop que se presentan en el 
 libro ``Volumes, Limits and Extensions of Analytic Varieties'' de Gabriel Stolzenberg \cite{Stolzenberg}.
 
@@ -111,12 +111,13 @@ de Chow \cite{Chow}
 \begin{teorema}[Chow]\label{Chow}
         Todo subespacio cerrado anal\'itico del espacio proyectivo complejo $\cp^{n}$ es algebraico.
 \end{teorema}
-\noindent Demostado a partir de los resultados de Bishop sobre variedades anal\'iticas de dimensi\'on pura $k$. Aqu\'i se define como \emph{espacio 
+\noindent El cual demostramos a partir de los resultados poco conocidos de Bishop sobre variedades anal\'iticas de dimensi\'on pura $k$. Aqu\'i se denota como \emph{espacio
 anal\'itico} o \emph{variedad anal\'itica} a un espacio topol\'ogico Hausdorff $X$ paracompacto con una estructura anillada $\mathcal{H}_X$, es decir, una 
-gavilla de anillos en $X$ que es localmente isomorfa a un subconjunto anal\'itico de $\con$. M\'as precisamente, un conjunto es anal\'itico 
-si para cada $x\in X$ existe una vecindad abierta $V$ y un homeomorfismo $\varphi_V:V\rightarrow Z,$ donde $U\subset\con$ es un abierto y $Z=Z(f_1,\dots,f_k)(U)$ 
-representa al subconjunto anal\'itico de los ceros de las funciones holomorfas $f_i:U\rightarrow\co$ y el pullback $\varphi^{*}:\mathcal{H}(U)/\mathcal{I}(Z)\rightarrow \mathcal{H}_X(V)$ 
-es un isomorfismo de anillos entre $\mathcal{H}_X(V)$ y el anillo cociente de
+gavilla de anillos en $X$ que es localmente isomorfa a un subconjunto anal\'itico de $\con$. M\'as precisamente, un conjunto $X$ es anal\'itico 
+si para cada $x\in X$ existe una vecindad abierta $V$ y un homeomorfismo $\varphi_V:V\rightarrow Z,$ donde $Z\subset U$, $U$ es un abierto
+de $\con$ y $Z=Z(f_1,\dots,f_k)(U)$
+representa al subconjunto anal\'itico de los ceros de las funciones holomorfas $f_i:U\rightarrow\co$. Adem\'as, se debe cumplir que el pullback $\varphi^{*}:\mathcal{H}(U)/\mathcal{I}(Z)\rightarrow \mathcal{H}_X(V)$ 
+sea un isomorfismo de anillos entre $\mathcal{H}_X(V)$ y el anillo cociente de
 \[
         \mathcal{H}(U)=\{f:U\rightarrow\co\,|\,f \text{ es holomorfa}\}\hspace{0.2cm}\text{con}\hspace{0.2cm}\mathcal{I}(Z)=\{f\in\mathcal{H}(U)\,|\,f|_{Z}=0\}.
 \]
@@ -128,15 +129,15 @@ polinomios en $\con$ denotado por $\co[z_1,\dots,z_n]$.
 \noindent Siguiendo la presentacion del libro de Stolzenberg (v\'ease \cite{Stolzenberg}) el resultado que liga 
 los resultados de Bishop con el teorema de Chow es un resultado que estipula lo siguiente:
 \begin{teorema}[Bishop]\label{Bishop1}
-        Sea $X\subset\con$ una subvariedad anal\'itica de dimensi\'on compleja pura $k$, si para toda $R\in\re^+$
+        Sea $X\subset\con$ una subvariedad anal\'itica de dimensi\'on compleja pura $k$. Si para toda $R\in\re^+$
         $$\textrm{Vol}_{2k}(X\cap B_R(0))\leq CR^{2k},$$
         donde $B_R(0)$ denota a la bola centrada en el origen de radio $R$, $C\in\re^{+}$ es una constante positiva
-        y $\textrm{Vol}_{2k}$ es el volumen de dimensi\'on $2k$. Entonces $X$ es algebraica.
+        y $\textrm{Vol}_{2k}$ es el volumen de dimensi\'on $2k$, entonces $X$ es algebraica.
 \end{teorema}
-\noindent La demostraci\'on que dimos en nuestro art\'iculo del teorena de Chow es de un car\'acter muy distinto a la demostraci\'on 
+\noindent La demostraci\'on que dimos en nuestro art\'iculo del teorema de Chow es de un car\'acter muy distinto a la demostraci\'on
 famosa de Serre (v\'ease \cite{GAGA}) y nos habla de una conexi\'on interesante entre an\'alisis y geometr\'ia algebraica.
 
-\subsection{El teorema secuencial de Bishop, la m\'etrica de Haussdorff y una demostraci\'on del teorema de Montel}
+\subsection{El teorema secuencial de Bishop, la m\'etrica de Hausdorff y una demostraci\'on del teorema de Montel}
 \noindent Las conexiones entre el an\'alisis y la geometr\'ia compleja nos han guiado a explorar m\'as sobre las posibles conexiones entre estas dos ramas,
 adem\'as de otros resultados con el an\'alisis complejo. Un ejemplo es el siguiente resultado cl\'asico que demostramos
 a partir de los resultados de Bishop. 
@@ -144,14 +145,14 @@ a partir de los resultados de Bishop.
         Sea $B\subset\con$ la bola unitaria, si $\mathcal{H}(\overline{B})$ es el \'algebra de Banach de funciones holomorfas que son continuas 
         en la frontera de $B$, entonces toda familia de funciones localmente acotadas $F\subset\mathcal{H}(\overline{B})$ es una familia \textit{normal}.
 \end{teorema}
-Como recordatorio hay que mencionar que una familia de funciones $F$ es \textit{normal} si y s\'olo si su cerradura es secuencialmente compacta. Si vemos este 
-teorema desde la perspectiva de los teoremas de Bishop, entonces podemos considerar que el siguiente teorema es una generalizaci\'on en
-un contexto m\'as general (v\'ease \cite[p. 30]{Stolzenberg}).
+Como recordatorio hay que mencionar que una familia de funciones $F$ es \textit{normal} si y s\'olo si su cerradura es secuencialmente compacta.
+Si pensamos al teorema de Montel desde la perspectiva de los teoremas de Bishop, entonces podemos considerar que el siguiente teorema de Bishop es una
+generalizaci\'on (v\'ease \cite[p. 30]{Stolzenberg}).
 
 \begin{teorema}[Bishop]\label{Bishop2}
         Sea $\{ V_n \}_{n\in\nat}$ una sucesi\'on de subvariedades anal\'iticas de dimensi\'on compleja pura $k$ de una regi\'on 
         $\Omega\subset\con$ con volumen uniformemente acotado por una constante $C\in\re^{+}$.
-        Si $V_n\rightarrow V$ converge a un cerrado $V\subset\con$ en el sentido de Hausdorff, entonces $V$ es una 
+        Si la sucesi\'on $V_n\rightarrow V$ converge a un cerrado $V\subset\con$ en el sentido de Hausdorff, entonces $V$ es una
         variedad anal\'itica. 
 \end{teorema}
 Esto debido a que Dr. Verjovsky y yo demostramos el resultado de Montel por medio del teorema \ref{Bishop2} pensando a las gr\'aficas de las
@@ -159,13 +160,12 @@ funciones como variedades anal\'iticas
 \[
         \Gamma_{f}=\{(z,w)\in B\times\co\,|\,w=f(z)\}=Z(w-f(z)),
 \]
-\noindent donde para una funci\'on holomorfa $g:\Omega\rightarrow\co$ denotamos a su conjunto nulo como $Z(g)=\{z\in\Omega\,|\,g(z)=0\}$. Ahora aqu\'i 
-pensamos a $\Gamma_{f}$ como variedades anal\'iticas de dimensi\'on pura $n$ en un abierto de $\co^{n+1}$, as\'i demostramos 
+\noindent donde $B$ es la bola unitaria en $\con$ y $Z(g)=\{z\in B\,|\,g(z)=0\}$ denota al conjunto nulo de una funci\'on holomorfa $g:B\rightarrow\co$. Ahora, aqu\'i pensamos a $\Gamma_{f}$ como variedades anal\'iticas de dimensi\'on pura $n$ en un abierto de $\co^{n+1}$, as\'i demostramos
 que para toda sucesi\'on $\{f_n\}_{n\in\nat}\subset F$ de funciones en una familia localmente acotada, tiene una subsucesi\'on 
 cuyas gr\'aficas convergen en el sentido de la m\'etrica de Hausdorff. Adem\'as, demostramos que su conjunto l\'imite 
 es a su vez la gr\'afica de una funci\'on holomorfa en $B$.
 
-Convergencia de una sucesi\'on de conjuntos $S_n\rightarrow S$ \emph{en el sentido de Hausdorff} para conjuntos cerrados de un espacio m\'etrico $(X,d)$
+La convergencia de una sucesi\'on de conjuntos $S_n\rightarrow S$ \emph{en el sentido de Hausdorff} para conjuntos cerrados de un espacio m\'etrico $(X,d)$
 sucede cuando $S_n\cap K\rightarrow S\cap K$ en la m\'etrica de Hausdorff $d_H$ para todo $K\subset X$ compacto, donde \'esta se define como
 \[
         d_H(K_1,K_2):= \max_{x\in K_1}\left\{d(x,K_2)\right\}+\max_{y\in K_2}\left\{d(y,K_1)\right\}. 
@@ -177,7 +177,7 @@ sucede cuando $S_n\cap K\rightarrow S\cap K$ en la m\'etrica de Hausdorff $d_H$ 
 como generalizaciones de resutados cl\'asicos del an\'alisis complejo, pero en el contexto de la teor\'ia de variedades anal\'iticas.
 
 \begin{table}[hpt]
-        \caption{Tabla con similitudes entre teoremas cl\'asicos de variable compleja y los teoremas de Bihop.}\label{Tab}
+        \caption{Tabla con similitudes entre teoremas cl\'asicos de variable compleja y los teoremas de Bishop.}\label{Tab}
         \centering
         \begin{tabular}{|m{5.5cm}|m{5.5cm}|} \hline
                         \begin{center} \vspace*{0.2cm} 
@@ -188,10 +188,10 @@ como generalizaciones de resutados cl\'asicos del an\'alisis complejo, pero en e
                         \end{center} \\
                 \hline
                 \begin{center} 
-                        Teorema de Liouville. 
+                        \textit{Teorema de Liouville.}
                 \end{center} & 
                 \begin{center}
-                        Teorema de Bishop (Teorema \ref{Bishop1}).
+                        \textit{Teorema de Bishop (Teorema \ref{Bishop1}).}
                 \end{center}\\ 
                         \hline Si $\vert f(z)\vert\leq C\,R^k$ en el conjunto $\{\vert z\vert\leq R\}$ 
                         para todo $R\in\re^{+}$con $f$ entera y $k\in\zah^{+}$, entonces 
@@ -203,11 +203,11 @@ como generalizaciones de resutados cl\'asicos del an\'alisis complejo, pero en e
                         \hline
                         \vspace{0.1cm}
                         \begin{center} 
-                        Teorema de extensi\'on de Riemann. 
+                        \textit{Teorema de extensi\'on de Riemann.}
                 \end{center} 
                         & 
                 \begin{center} 
-                        Generalizaci\'on del teorema de Remmert-Stein de Bishop (v\'ease \cite{R-S} y \cite[p. 34]{Stolzenberg}). 
+                        \textit{Generalizaci\'on del teorema de Remmert-Stein de Bishop (v\'ease \cite{R-S} y \cite[p. 34]{Stolzenberg}).}
                 \end{center} \\ 
                         \hline Si $f:(\Omega\setminus E)\subset\co\rightarrow\co$ es una funci\'on holomorfa y $E$ es un subconjunto
                         compacto de capacidad $0$, entonces $f$ es extendible a una funci\'on holomorfa
@@ -222,11 +222,11 @@ como generalizaciones de resutados cl\'asicos del an\'alisis complejo, pero en e
                         de $U$ (v\'ease \cite[teorema 4]{Bishop}).\\ 
                         \hline 
                 \begin{center} 
-                        Teorema de compacidad de Montel. 
+                        \textit{Teorema de compacidad de Montel.}
                 \end{center} 
                         & 
                 \begin{center}
-                Teorema de sucesiones de variedades anal\'iticas con volumen uniformemente acotado de Bishop.
+                        \textit{Teorema de sucesiones de variedades anal\'iticas con volumen uniformemente acotado de Bishop.}
                 \end{center}\\
                 \hline 
                 \vspace{0.1cm}
@@ -243,7 +243,8 @@ como generalizaciones de resutados cl\'asicos del an\'alisis complejo, pero en e
 
 M\'as a\'un, las variedades anal\'iticas en s\'i se pueden pensar claramente como una generalizaci\'on de funciones holomorfas, 
 ya que cada funci\'on holomorfa $f:\Omega\subset\con\rightarrow\co$ tiene asociada como variedad anal\'itica a su divisor cero $[Z]=Z(g)$
-o como ya se mencion\'o previmente, a su gr\'afica $\Gamma_{f}\subset\Omega\times\co$, la primera es una subvariedad anal\'itica de dimensi\'on $n-1$ y la segunda es
+o como ya se mencion\'o previmente, a su gr\'afica $\Gamma_{f}\subset\Omega\times\co$, la primera es una subvariedad anal\'itica de
+dimensi\'on $n-1$ y la segunda es
 una subvariedad anal\'itica de dimensi\'on pura $n$. Aunado a esto, es ampliamente conocido que en el contexto cl\'asico
 de la variable compleja, toda funci\'on holomorfa en una variedad holomorfa compacta es constante, por ejemplo $\cp^n$ es compacta,
 y por lo tanto toda funci\'on holomorfa global es constante. Sin embargo, como sabemos $\cp^n$ tiene muchas subvariedades anal\'iticas, tantas
@@ -256,14 +257,21 @@ versiones de teoremas cl\'asicos de an\'alisis complejo y sus correspondientes e
 \ref{Bishop2}, es el siguiente resultado sobre foliaciones holomorfas en variedades de K\"ahler con hojas compactas y volumen 
 uniformemente acotado. 
 
-Se define una variedad de K\"ahler como una variedad compleja $(M,I)$, es decir $M$ es una variedad diferenciable real de dimensi\'on $2d$ e 
-$I$ es una estructura compleja $I^2=-1$ con una estructura adicional m\'etrica dada por $h=g-i\omega$ una m\'etrica hermitiana tal que su 
-(1,1)-forma definida por $\omega=-\Im (\omega)$ sea cerrada, es decir, $d\,\omega=0$. Observamos que $g$ es una m\'etrica riemanniana con la misma 
-forma de volumen que la inducida por $\omega$. Adem\'as, es importante mencionar que toda subvariedad compleja de una variedad K\"ahler es 
-K\"ahler. De la misma forma, las subvariedades compactas complejas de una variedad K\"ahler minimizan el volumen en su clase de homolog\'ia. 
-Adem\'as de las previas definiciones, hay que mencionar que una foliaci\'on holomorfa $\mathfrak{F}$ en una variedad compleja $(M,I)$ es una 
-distribuci\'on involutiva de subespacios del haz tangente con dimensi\'on constante. Geom\'etricamente se describe a la foliaci\'on como 
-una partici\'on de $M=\bigcup\mathcal{L}_z$, donde cada $\mathcal{L}_z$ es una subvariedad holomorfa de $(M,I)$ de una dimensi\'on dada.
+Se define una variedad de K\"ahler como una variedad compleja $(M,I)$ con una estructura adicional hermitiana $h=g-i\omega$ tal que la (1,1)-forma definida por $\omega=-\Im (h)$ sea cerrada $d\,\omega=0$. A dicha forma cerrada se le denota como \emph{forma de K\"ahler}, es decir, $M$ es una variedad diferenciable real de dimensi\'on $2d$ e
+$I$ es una estructura compleja $I^2=-1$, adem\'as $h$ es un producto hermitiano en el espacio tangente de $M$.
+Vale la pena mencionar que $g=\Re (h)$ es una m\'etrica riemanniana con la misma forma de volumen que la inducida por $\omega$, esto es debido a la relaci\'on natural entre $\omega$ y $g$ dada por $g(\cdot,\cdot)=\omega(\cdot,I(\cdot))$. Los ejemplos protot\'ipicos m\'as importantes de variedades K\"ahler son variedades que ya he mencinado, estas son $\con$ con el producto punto hermitiano tradicional y $\cp^{n}$ con la m\'etrica conocida como m\'etrica de Fubini-Study.
+Es com\'un definir a una m\'etrica K\"ahler por medio de su forma de K\"ahler, en el caso de la m\'etrica de Fubini-Study, \'esta se define en coordenadas $Z=[1:\zeta_{1},\dots,\zeta_{n}]=[1:\zeta]$ como (v\'ease \cite[p. 154]{Chirka})
+\[
+    \omega=\frac{i}{2}\partial\overline{\partial}\log(|Z|^{2})=\frac{i}{2}\partial\overline{\partial}\log(1+|\zeta|^{2}).
+\]
+Asimismo, es importante mencionar que toda subvariedad compleja de una variedad K\"ahler es K\"ahler. De la misma forma, las subvariedades compactas complejas de una variedad K\"ahler minimizan el volumen en su clase de homolog\'ia.
+
+Adem\'as de las previas definiciones, hay que mencionar que una foliaci\'on holomorfa $\mathfrak{F}$ en una variedad compleja $(M,I)$ de dimensi\'on compleja
+$n$ es una distribuci\'on involutiva de subespacios del haz tangente con dimensi\'on compleja constante $k$. Geom\'etricamente se describe a la foliaci\'on como
+una partici\'on de $M=\bigcup\mathcal{L}_z$, donde cada $\mathcal{L}_z$ es una subvariedad holomorfa de $(M,I)$ de una dimensi\'on dada. Se define la
+holonom\'ia de una hoja de la foliaci\'on $\mathcal{L}$ como el morfismo de grupos $H:\pi_{1}(\mathcal{L})\rightarrow\textrm{Bih}(\co^{n-k},0)$ definido por la
+acci\'on de curvas cerradas en la din\'amica transversa (v'ease \cite{Thurston}). Donde $\pi_{1}$ denota al grupo fundamental de un espacio topol\'ogico y
+    $\textrm{Bih}(\co^{n-k},0)$ es el grupo de g\'ermenes de biholomorfismos centrados en $0$ de $\co^{n-k}$.
 
 \subsection{Estabilidad en Variedades K\"ahler y la conjetura de Beauville}
 
@@ -273,17 +281,17 @@ una partici\'on de $M=\bigcup\mathcal{L}_z$, donde cada $\mathcal{L}_z$ es una s
         compactas de dimensi\'on real $2d$ donde $d<n$, entonces:
         \begin{enumerate}
                 \item[a)] El volumen con respecto a la m\'etrica K\"ahler de las hojas es uniformemente acotado.
-                \item[b)] El espacio cociente $M/\mathfrak{F}$ es un orbifold complejo con singularidades en las hojas de holonomia no trivial.
+                \item[b)] El espacio cociente $M/\mathfrak{F}$ es un orbifold complejo con singularidades en las hojas de holonom\'ia no trivial.
         \end{enumerate}
 \end{teorema}
 Aunado a esto, demostramos que la funci\'on volumen $\nu:M/\mathfrak{F}\rightarrow\re^{+}$ definida por el volumen 
 \[
         \nu(\mathcal{L}_z):=\textrm{Vol}_{2d}(\mathcal{L}_z)
 \] 
-es discretamente semicontinua inferiormente, es decir, que para todo $n\in\zah^{+}$ y $z\in M$ se cumple que existe una vecindad
+es discretamente semicontinua inferiormente, es decir, que para todo $n\in\zah^{+}$ y $z\in M$ se cumple que existe una vecindad $W$ de $z$
 tal que para todo $\epsilon\in\re^{+}$ 
 \[
-        \nu(y)>n\nu(z)\hspace{0.2cm}\text{o}\hspace{0.2cm}|\nu(y)-k\nu(z)|<\epsilon\hspace{0.2cm}\text{para alg\'un}\hspace{0.2cm}k\in\{1,\dots,n\}.
+        \nu(y)>n\nu(z)\hspace{0.2cm}\text{o}\hspace{0.2cm}|\nu(y)-k\nu(z)|<\epsilon\hspace{0.1cm}\forall y\in W\text{ y para alg\'un}\hspace{0.1cm}k\in\{1,\dots,n\}.
 \]
 \noindent M\'as a\'un, los brincos en la continuidad corresponden a las hojas con holonom\'ia no trivial, las cuales son cubiertas
 por hojas con holonom\'ia trivial. Como todas las hojas son compactas, la holonom\'ia es finita y el volumen de las hojas
@@ -302,12 +310,12 @@ las peculiaridades de la geometr\'ia k\"ahleriana, adem\'as el Dr. Verjovsky y y
 espacio de hojas (v\'ease \cite{EMS}). 
 
 Es importante observar que es posible encontrar foliaciones en variedades compactas real anal\'iticas e incluso algebraicas, donde 
-todas las hojas de la foliaci\'on son curvas cerradas (c\'irculos) cuyas longitudes no se encuentren uniformemente acotadas, v\'ease el ejemplo de \cite{E-V}. 
+todas las hojas de la foliaci\'on son curvas cerradas (c\'irculos) cuyas longitudes no se encuentren uniformemente acotadas, v\'ease el ejemplo de \cite{E-V} y \cite{Epstein2}.
 Algo que es importante destacar de este ejemplo es que la codimensi\'on es lo suficientemente grande 
 para garantizar que el volumen (longitud) no se encuentre uniformemente acotado y tambi\'en sucede que la funci\'on de longitud de las hojas 
 no es localmente acotada.
 
-Lo anteriormente mencionado nos pone en el contexto de la conjetura de Beauville (2000):
+Lo anteriormente mencionado nos pone en el contexto de la conjetura de Beauville (v\'ease \cite{Beuville}).
 \begin{conjetura}[Beauville]\label{Beauville}
         Sea $M$ una varidead compacta K\"ahler tal que exista una descomposici\'on holomorfa de su haz tangente
         \[
@@ -315,15 +323,16 @@ Lo anteriormente mencionado nos pone en el contexto de la conjetura de Beauville
         \]
         entonces el cubriente univeral de $M$ es isomorfo a un producto 
         \[
-        \widetilde{X}\cong\prod_{i\in I}U_i\hspace{0.2cm}\text{de tal forma que esto induce}\hspace{0.2cm}T\widetilde{X}\cong\bigoplus_{i\in I}\widetilde{\mathcal{F}}_i
-        \]
+        \widetilde{M}\cong\prod_{i\in I}U_i\hspace{0.2cm}\text{de tal forma que esto induce un isomorfismo}\hspace{0.2cm}T\widetilde{M}\cong\bigoplus_{i\in I}\widetilde{\mathcal{F}_i}
+      \]
+      donde $\widetilde{\mathcal{F}_{i}}$ se proyecta en $\mathcal{F}_{i}$ bajo la aplicaci\'on cubriente.
 \end{conjetura}
 Recientemente, Druel, Pereira, Pym y Touzet demostraron una versi\'on de esta conjetura en el contexto que expusimos previamente,
 pero con el enfoque particular de variedades de Poisson, v\'ease \cite{DPPT}.
 \begin{teorema}[Druel, Pereira, Pym y Touzet]\label{DPPT}
         Sup\'ongase que $M$ es una variedad compacta K\"ahler tal que su haz tangente se escinde $TM=\mathfrak{F}\oplus\mathfrak{G}$, donde
         los subhaces $\mathfrak{F}$ y $\mathfrak{G}$ son involutivos. Si $\mathfrak{F}$ tiene una hoja compacta $L$ con holonom\'ia finita,
-        entonces $\widetilde{M}$ es biholomorfa a un producto de variedades $N\times P$ cuyas haces tangentes son isofomorfos
+        entonces $\widetilde{M}$ es biholomorfa a un producto de variedades $N\times P$ cuyos haces tangentes son isofomorfos
         a $\mathfrak{F}$ y $\mathfrak{G}$ respectivamente.
 \end{teorema}
 \noindent Como observaci\'on, se puede apreciar del resultado anterior que en una variedad de K\"ahler conexa, la existencia 
@@ -343,33 +352,55 @@ b\'usqueda de resultados nuevos.
 
 \section{Comportamiento local de foliaciones de hojas uniformizadas por discos y sus l\'imites}
 
-\noindent En t\'erminos de comportamiento local de las foliaciones holomorfas, Dr. Verjovsky y yo hemos estudiado el caso de foliaciones por 
-curvas complejas (superficies de Riemann), en la bola unitaria $B\subset\co^n$, en el caso cuando se encuentran uniformizadas por el 
-disco unitario $\Delta:=\{|z|< 1\}\subset\co$, es decir las hojas tienen una estructura hiperb\'olica. As\'i, se busca el comportamiento 
-l\'imite de las hojas si se piensa al disco como una variedad K\"ahler completa. En este caso, las hojas no son necesariamente compactas 
-ni es necesario que su volumen sea acotado. Se busca saber m\'as acerca de las propiedades m\'etricas y geom\'etricas de las hojas. 
-En este sentido, se entiende por \emph{l\'imite} al conjunto al que se aproximan las geod\'esicas de las hojas en $\overline{B}$ cuando las recorremos 
-en un tiempo infinito.
-Para entender estos l\'imites de geod\'esicas, proponemos estudilarlos por medio de una compactaci\'on del disco adecuada donde 
-sea posible esclarecer algo sobre la pregunta en cuesti\'on. Con esto en mente, proponemos encajar al disco en el espectro 
-del \'algebra de Banach de funciones holomorfas acotadas en el disco, es decir, $\mathcal{H}^{\infty}=\mathcal{L}(\Delta)^{\infty}\cap\mathcal{H}(\Delta)$, 
-as\'i \hbox{$M^{\infty}:=\{\kappa:\mathcal{H}\rightarrow\co\,|\,\kappa(fg)=\kappa(f)\kappa(g),\,\kappa(f+g)=\kappa(f)+\kappa(g),\,\kappa(1)=1\}$} y por lo tanto $\Delta$ claramente encaja 
-en $M^{\infty}$, $\Delta\rightarrow M^{\infty}$ por medio de la funcion evaluaci\'on $ev(z)[f]=f(z)$. 
-Se saben muchas propiedades del conjunto $M^{\infty}$, es un espacio m\'etrico compacto con la topolog\'ia d\'ebil dada por 
-la acci\'on natural de $\mathcal{H}^{\infty}$ en $M^{\infty}$, es decir para toda $f\in\mathcal{H}^{\infty}$ define $\tilde{f}:M^{\infty}\rightarrow\co$ dada por $\kappa\mapsto\kappa(f)$ (v\'ease \cite{SCHARK}). 
-Adem\'as, al actuar la funci\'on identidad $id_{\Delta}$ en $M^{\infty}$, se obtiene lo siguiente $\pi=\tilde{id_{\Delta}}$ 
-es la inversa al encaje $ev:\Delta\rightarrow M^{\infty}$, claramente. 
-M\'as a\'un como $M^{\infty}$ es compacta, la imagen bajo $\pi$ es un conjunto compacto. Se puede demostrar que este conjunto es en efecto
-$\overline{\Delta}\subset\co$ (v\'ease \cite{SCHARK}). De esta forma, al investigar el subconjunto $M^{\infty}\setminus\Delta$, conocido como 
-la \emph{corona} se obtienen muchas propiedades interesantes; este conjunto fibra sobre $S=\overline{\Delta}\setminus\Delta$ por medio de el mapeo $\pi$ 
-y por lo tanto es posible extender cualquier funci\'on continua definida en $\Delta$ a una funci\'on en $M^{\infty}$, la cual es
-constante en las fibras de $\pi$ sobre $S$.
-Adem\'as, los biholomorfismos de $\Delta$ act\'uan de forma natural en $\mathcal{H}^{\infty}$ por medio de la composici\'on derecha, por lo que es posible 
-definir a los biholomorfismos de $\Delta$ en $M^{\infty}$. Simplemente si $\varphi$ es un biholomorfismo, entonces $\varphi^{*}[\kappa](f)=\kappa(f\circ\varphi)$ est\'a 
-bien definida y es un homeomorfismo de $M^{\infty}$. 
-Con esto es posible demostrar que las fibras de $\pi$ en $S$ son homeomorfas entre s\'i bajo 
-rotaciones por el origen y adem\'as notamos que esto permite actuar al grupo de isometr\'ias hiperb\'olicas $\pslr$ en $M^{\infty}$,
-por lo que es posible hablar de cierta estructura hiperb\'olica en $M^{\infty}$. As\'i, definimos el l\'imite como la imagen $\overline{\varphi}(M^{\infty}\setminus\Delta)$, donde $\varphi$ es la uniformizaci\'on
+\noindent En t\'erminos de comportamiento local de las foliaciones holomorfas,
+el Dr. Verjovsky y yo hemos estudiado el caso de foliaciones por curvas
+complejas (superficies de Riemann), en la bola unitaria $B\subset\co^n$, en el
+caso cuando se encuentran uniformizadas por el  disco unitario
+$\Delta:=\{|z|< 1\}\subset\co$, es decir las hojas tienen una estructura
+hiperb\'olica. As\'i, se busca el comportamiento  l\'imite de las hojas si se
+piensa al disco como una variedad K\"ahler completa. En este caso, las hojas no
+son necesariamente compactas  ni es necesario que su volumen sea acotado. Se
+busca saber m\'as acerca de las propiedades m\'etricas y geom\'etricas de las
+hojas.  En este sentido, se entiende por \emph{l\'imite} al conjunto al que se
+aproximan las geod\'esicas de las hojas en $\overline{B}$ cuando las recorremos
+en un tiempo infinito.  Para entender estos l\'imites de geod\'esicas,
+proponemos estudiarlos por medio de una compactaci\'on del disco adecuada donde
+sea posible esclarecer algo sobre la pregunta en cuesti\'on. Con esto en mente,
+proponemos encajar al disco en el espectro  del \'algebra de Banach de funciones
+holomorfas acotadas en el disco, es decir,
+$\mathcal{H}^{\infty}=\mathcal{L}(\Delta)^{\infty}\cap\mathcal{H}(\Delta)$,
+as\'i
+\hbox{$M^{\infty}:=\{\kappa:\mathcal{H}\rightarrow\co\,|\,\kappa(fg)=\kappa(f)\kappa(g),\,\kappa(f+g)=\kappa(f)+\kappa(g),\,\kappa(1)=1\}$}
+y por lo tanto $\Delta$ claramente encaja  en $M^{\infty}$,
+$\Delta\rightarrow M^{\infty}$ por medio de la funci\'on evaluaci\'on
+$ev(z)[f]=f(z)$. Se saben muchas propiedades del conjunto $M^{\infty}$. A saber, es un
+espacio m\'etrico compacto con la topolog\'ia d\'ebil dada por la acci\'on
+natural de $\mathcal{H}^{\infty}$ en $M^{\infty}$, es decir para toda
+$f\in\mathcal{H}^{\infty}$ define $\tilde{f}:M^{\infty}\rightarrow\co$ dada por
+$\kappa\mapsto\kappa(f)$ (v\'ease \cite{SCHARK}).  Adem\'as, al evaluar la
+funci\'on identidad $id_{\Delta}$ en $M^{\infty}$, se obtiene lo siguiente,
+$\pi=\tilde{id_{\Delta}}$  es la inversa al encaje
+$ev:\Delta\rightarrow M^{\infty}$, claramente.  M\'as a\'un como $M^{\infty}$ es
+compacta, la imagen bajo $\pi$ es un conjunto compacto. Se puede demostrar que
+este conjunto es en efecto $\overline{\Delta}\subset\co$ (v\'ease
+\cite{SCHARK}). De esta forma, al investigar el subconjunto
+$M^{\infty}\setminus\Delta$, conocido como  la \emph{corona}, se obtienen muchas
+propiedades interesantes; este conjunto fibra sobre
+$S=\overline{\Delta}\setminus\Delta$ por medio del mapeo $\pi$  y por lo tanto
+es posible extender cualquier funci\'on continua definida en $\Delta$ a una
+funci\'on en $M^{\infty}$, la cual es constante en las fibras de $\pi$ sobre
+$S$.  Adem\'as, los biholomorfismos de $\Delta$ act\'uan de forma natural en
+$\mathcal{H}^{\infty}$ por medio de la composici\'on derecha, por lo que es
+posible  definir a los biholomorfismos de $\Delta$ en $M^{\infty}$. Simplemente
+si $\varphi$ es un biholomorfismo, entonces
+$\varphi^{*}[\kappa](f)=\kappa(f\circ\varphi)$ est\'a  bien definida y es un
+homeomorfismo de $M^{\infty}$.  Con esto es posible demostrar que las fibras de
+$\pi$ en $S$ son homeomorfas entre s\'i bajo  rotaciones por el origen y
+adem\'as notamos que esto permite actuar al grupo de isometr\'ias hiperb\'olicas
+$\pslr$ en $M^{\infty}$, por lo que es posible hablar de cierta estructura
+hiperb\'olica en $M^{\infty}$. As\'i, definimos el l\'imite como la imagen
+$\overline{\varphi}(M^{\infty}\setminus\Delta)$, donde $\varphi$ es la
+uniformizaci\'on
 de la hoja y $\overline{\varphi}$ es su extensi\'on a $M^{\infty}$. El contexto de estas preguntas que hemos hecho es: 
 \begin{enumerate}
         \item Toda foliaci\'on en la bola $B\subset\co^2$ con una singularidad en el origen tiene una hoja que pasa por el origen
@@ -381,12 +412,13 @@ de la hoja y $\overline{\varphi}$ es su extensi\'on a $M^{\infty}$. El contexto 
 
 \section{Variedades de Fano-Poisson}
 \noindent  Inspirados por la demostraci\'on del teorema \ref{DPPT} del art\'iculo reciente \cite{DPPT}, creemos que existen 
-relaciones interesantes entre la funci\'on de volumen de las hojas definidas por la foliacion natural de una variedad \emph{Poisson}
+relaciones interesantes entre la funci\'on de volumen de las hojas definidas por la foliaci\'on natural de una variedad \emph{Poisson}
 (teorema \ref{weins}) y la estructura de una variedad Fano-Poisson.
 \subsection{Variedades de Poisson, el teorema de Weinstein y su foliaci\'on natural}
 \noindent Primero hay que recordar que una variedad compleja $M$ es de Poisson si existe una operaci\'on bilineal en el anillo de g\'ermenes de 
-funciones holomorfas en $M$, la cual se le conoce por el nombre de \emph{corchete de Poisson}. Denotaremos por $\mathcal{O}_M:=\mathcal{H}_M/\sim$, donde $f_1\sim f_2$ si 
-$f_1=f_2|_U$, al anillo de g\'ermenes de funciones holomorfas. As\'i, un corchete de Poisson es una funci\'on bilineal
+funciones holomorfas en $M$, la cual se le conoce por el nombre de \emph{corchete de Poisson}.
+Denotaremos por $\mathcal{O}_M:=\mathcal{H}_M/\sim$, al anillo de g\'ermenes de funciones holomorfas, donde $f_1\sim f_2$ si
+$f_1=f_2|_U$ para alg\'un abierto $U\subset\con$. As\'i, un corchete de Poisson es una funci\'on bilineal
 \[
 \{\cdot,\cdot\}:\mathcal{O}_M\times\mathcal{O}_M\rightarrow\mathcal{O}_M,
 \]
@@ -415,7 +447,7 @@ Por lo tanto, generalizando esto tenemos el siguiente mapeo definido por un corc
 \noindent Con esto, el rango de $\pi$ en un punto $p\in M$ se define como el entero positivo $r\in \zah^{+}$ que define la dimensi\'on del
 espacio m\'aximo, donde $\pi^{\#}_p$ es no degenerada, es decir, es la dimensi\'on del espacio m\'as grande, tal que $\pi^{\#}$ es una
 biyecci\'on. Si $\pi^{\#}$ es no degenerada, su rango es $2n=\dim(M)$, entonces $\pi^{-1}$, la inversa de $\pi^{\#}$, define una forma simpl\'ectica
-en $M$. El teorema de escici\'on de Weinstein define una foliaci\'on natural en una variedad $(M,\pi)$ de Poisson, pero primero 
+en $M$. El teorema de escisi\'on de Weinstein define una foliaci\'on natural en una variedad $(M,\pi)$ de Poisson, pero primero
 recordamos que una funci\'on holomorfa entre dos variedades de Poisson $(M_1,\{\cdot,\cdot\}_1)$ y $(M_2,\{\cdot,\cdot\}_2)$ es un morfismo de Poisson 
 $\phi:M_1\rightarrow M_2$ si $\{f,g\}_1\circ\phi=\{f\circ\phi,g\circ\phi\}_2$.
 \begin{teorema}[Weinstein]\label{weins}
@@ -428,7 +460,7 @@ $\phi:M_1\rightarrow M_2$ si $\{f,g\}_1\circ\phi=\{f\circ\phi,g\circ\phi\}_2$.
         \]
 \end{teorema} 
 \noindent Observamos del teorema anterior que $f^{jk}(x)=0$. Este teorema define claramente una foliaci\'on natural en $(M,\pi)$ de hojas
-simpl\'ecticas. Sin embargo, no todas son de las misma dimensi\'on, por lo que es necesario notar que la definici\'on de foliaci\'on
+simpl\'ecticas. Sin embargo, no todas son de la misma dimensi\'on, por lo que es necesario notar que la definici\'on de foliaci\'on
 se puede expandir a este contexto m\'as general, es decir, una foliaci\'on es simplemente un $\mathcal{O}_M$-subm\'odulo de $\mathcal{T}M$ involutivo.
 Ahora, esto define una filtraci\'on $X_0\subset X_2\subset X_4\subset\dots\subset M$, donde $X_{2k}=\{x\in M\,|\,\textrm{rang}(\pi_x)\leq 2k\}$,
 si denotamos a las hojas simpl\'ecticas de $(M,\pi)$ como $\mathcal{L}$, entonces tambi\'en podemos pensar a $X_{2k}$ como 
@@ -454,14 +486,15 @@ iluminar con nueva informaci\'on utilizando la funci\'on volumen. Una variedad $
 \noindent Hay que mencionar que normalmente en la literatura se define una variedad Fano como una variedad algebraica $X$ completa 
 en el sentido de que toda proyecci\'on $X\times Y\rightarrow Y$ es cerrada para toda variedad algebraica $Y$, tal que su divisor/haz antican\'onico
 $K^{*}_{X}$ es amplio, por lo tanto, toda variedad Fano es \emph{proyectiva}. La disparidad entre la definici\'on que dimos y la utilizada 
-ampliamente en la literatura proviene de la demostraci\'on dada por Yau de la conjetura de Calabi (v\'ease \cite{S-Yau}). Una varieda
-\emph{Fano-Poisson} es entonces una variedad compleja con estas dos estructuras, en particular son compactas K\"ahler \cite{Myers}. 
+ampliamente en la literatura proviene de la demostraci\'on dada por Yau de la conjetura de Calabi (v\'ease \cite{S-Yau}). Una variedad
+\emph{Fano-Poisson} es entonces una variedad compleja con estas dos estructuras. Por el teorema de Bonnet-Myers, dichas variedades
+son compactas K\"ahler (v\'ease \cite{Myers}).
 \begin{conjetura}[Bondal]\label{Bondal}
-         Sea $M$ una variedad de Fano-Poisson, bajo la notaci\'on previamente establecida, $X_{2k}$ es la uni\'on de las hojas 
-         simpl\'ecticas de dimensi\'on $2k$, entonces $X_{2k}$ tiene una componente de dimensi\'on mayor a $2k$.
+  Sea $M$ una variedad de Fano-Poisson, si $X_{2k}$ es la uni\'on de las hojas simpl\'ecticas definidas por el teorema de Weinstein (teorema \ref{weins})
+  de dimensi\'on real (o rango) menores a $2k$, entonces $X_{2k}$ tiene una componente de dimensi\'on mayor a $2k$ (v\'ease \cite{Bondal}).
 \end{conjetura}
 \noindent No sabemos si es cierta o falsa o si es posible demostrar con lo que vamos a proponer, pero creemos que como una 
-investigaci\'on entre la relaci\'on entre la geometr\'ia complejo-diferencial y la geometr\'ia algebraica lo que proponemos es interesante. 
+investigaci\'on sobre la relaci\'on entre la geometr\'ia complejo-diferencial y la geometr\'ia algebraica lo que proponemos es interesante.
 Esta conexi\'on creemos que es relevante para el acercamiento a la geometr\'ia que nosotros proponemos, esto est\'a inspirado por trabajos 
 previos de Yau \cite{S-Yau} y sobre todo Donaldson y Sun \cite{D-SS}. En particular, Donaldson y Sun muestran resultados de naturaleza muy similar 
 a los resultados de Bishop (teorema \ref{Bishop2}) en el contexto generalizado de l\'imites de Gromov-Hausdorff en variedades de 
@@ -481,7 +514,7 @@ K\"ahler, con particular aplicaci\'on a las variedades de Fano.
         localmente una fibraci\'on (v\'ease \cite{A-V}). 
         
         \item Bajo estas suposiciones, creemos que es posible definir un biholomorfismo entre los cubrientes universales 
-        de las hojas por medio de levantamientos de curvas y trabajar con el grupoide de holonomia de la foliaci\'on 
+        de las hojas por medio de levantamientos de curvas y trabajar con el grupoide de holonom\'ia de la foliaci\'on
         similar a lo realizado en \cite{DPPT}. Adem\'as, creemos que es posible extraer informaci\'on m\'etrica de las
         hojas (o su cubriente) si se levantan geod\'esicas en lugar de curvas arbitrarias, donde simplemente utilizamos la 
         m\'etrica riemanniana en $M/\mathfrak{F}$ heredada de la m\'etrica K\"ahler original. 
@@ -505,7 +538,7 @@ K\"ahler, con particular aplicaci\'on a las variedades de Fano.
 %\textcolor{red}{\centerline{Proponemos:}}
         \item Estudiar el crecimiento del volumen de los conjuntos $X_{2k}\cap B_{R}(x)$ donde $B_R(x)$ es la bola m\'etrica 
         de radio $R$ centrada en un punto $x\in X_{2k}$ cuando $R\rightarrow\infty$. Si el conjunto $X_{2k}$ es 
-        de dimensi\'on mayor a $2k$, esperamos un comportamiento de crecimiento de volumen mayor a $\mathcal{O}(R^{2k})$.
+        de dimensi\'on mayor a $2k$, esperamos un comportamiento de crecimiento de volumen mayor a $\mathcal{O}(R^{2k}).$
         
         \item Buscar casos en los que existan descripciones de los conjuntos $X_{2k}$ que nos permitan describir dichos conjuntos
         como l\'imites de Gromov-Hausdorff y hacer uso de cotas dadas en \cite{D-SS} para determinar la tasa de crecimiento
@@ -520,22 +553,22 @@ K\"ahler, con particular aplicaci\'on a las variedades de Fano.
 \end{itemize}
 \begin{thebibliography}{3}
 
-\bibitem{A-F} Alarc\'on, A., Forstneric (2019) \textit{A foliation of the ball by complete holomorphic discs}, Mathematische Zeitschrift
-pp. 169-174, Springer-Verlag.
+\bibitem{A-F} Alarc\'on, A., Forstneric (2019) \textit{A foliation of the ball by complete holomorphic discs}, Mathematische Zeitschrift,
+Springer-Verlag, pp. 169-174.
 
 \bibitem{A-V} Alexander J.C., Verjovsky A., (1988) \textit{First Integrals for Singular Holomorphic Foliations With Leaves of Bounded Volume}
-Holomorphic Dynamics. Lecture Notes in Mathematics, vol 1345. Springer, Berlin, Heidelberg.
+Holomorphic Dynamics. Lecture Notes in Mathematics, vol 1345. Springer, Berlin, Heidelberg, pp. 1–10.
 
-\bibitem{Beuville1} Beauville, A. (2000) \textit{Complex manifolds with split tangent bundle}, Complex analysis and algebraic geometry
-, de Gruyer, Berlin.
+\bibitem{Beuville} Beauville, A. (2000) \textit{Complex manifolds with split tangent bundle}, Complex analysis and algebraic geometry
+, de Gruyer, Berlin, 61-70.
 
-\bibitem{ZB} Blocki, Z., (2011) \textit{The Complex Monge-Amp\`ere Equation in K\"ahler Geometry} Lecture Notes in Mathematics 2075
-paart of Pluripotential Theory, Springer-Verlag, pp. 95-143.
+\bibitem{ZB} Blocki, Z. (2011) \textit{The Complex Monge-Amp\`ere Equation in K\"ahler Geometry} Lecture Notes in Mathematics 2075
+part of Pluripotential Theory, Springer-Verlag, pp. 95-143.
 
 \bibitem{Bishop} Bishop, E. (1964) \textit{Conditions for the Analyticity  of certain sets}, Michigan Math. J. 11, No. 4, 289--304. 
 
 \bibitem{Bondal} Bondal, A. I,. (1993) \textit{Non-commutative deformations and Poisson brackets on projetive spaces}, 
-Max-Planck-Institut f\"ur Matematik, Germany.
+Max-Planck-Institut f\"ur Matematik, Germany, 93–67.
 
 \bibitem{brunella} Brunella, M., (2015) \textit{Birational Geometry of Foliations}, IMPA Monographs, 
 Springer International Publishing, Switzerland.
@@ -546,61 +579,54 @@ Academic, Dordrecht, The Netherlands.
 \bibitem{Chow} Chow, W-L. (1949) \textit{On Compact Complex Analytic Varieties},
 American Journal of Mathematics, Vol. 71, No. 4, pp. 893-914.
 
-\bibitem{D-SS} Donaldson, S., Sun, S. (2014) \textit{Gomov-Hausdorff Limits of K\"ahler Manifolds and Algebraic Geometry I},
- Acta Math 213, 63–106, Springer-Verlag.
+\bibitem{D-SS} Donaldson, S., Sun, S. (2014) \textit{Gromov-Hausdorff Limits of K\"ahler Manifolds and Algebraic Geometry I},
+ Acta Math 213, Springer-Verlag, 63-106.
 
 \bibitem{DPPT}Druel S., Pereira J V., Pym B., Touzet F. \textit{A global Weinstein splitting theorem for 
 holomorphic Poisson manifolds}, Por publicarse.
 
 \bibitem{EMS} Edwards, R., Millet, K., Sullivan, D. (1975) \textit{Foliations
-With All Leaves Compact}, Topology Vol. 16, pp. 13-32. Pergamon Press, 1977.
+With All Leaves Compact}, Topology Vol. 16, Pergamon Press, 1977, pp. 13-32.
 
 \bibitem{V-A} Epstein, D. B. A., Millet, K. C., Tischler D.
-(1977) \textit{Leaves Without Holonomy}, Journal of the London Mathematical
-Society.
+(1977) \textit{Leaves Without Holonomy}, Journal of The London Mathematical Society-second Series, 548-552.
 
 \bibitem{E-V} Epstein, D. B. A., Voght, E. (1978) \textit{A Counterexample to the Periodic Orbit Conjecture}, 
 Annals of Mathematics, Vol. 108, pp. 539-552. 
 
-\bibitem{Epstein1} Epstein, D. B. A. (1976) \textit{Foliations with all leaves compact}, Annales de l'Institute Fourier, 
+\bibitem{Epstein1} Epstein, D. B. A. (1976) \textit{Foliations with all leaves compact, Annales de Institute Fourier},
 tome 26 no. 1, pp. 265-282.
 
-\bibitem{Epstein2} Epstein, D. B. A. (1977) \textit{Periodic Flows on Three-Manifolds}, Annals of Mathematics, 
+\bibitem{Epstein2} Epstein, D. B. A. (1972) \textit{Periodic Flows on Three-Manifolds}, Annals of Mathematics,
 Second Series, Vol. 95, No. 1 (Jan., 1972), pp. 66-82.
 
 \bibitem{Gua-Pym} Gualtieri, M., Pym, B. (2012) \textit{Poisson modules and degeneracy loci},
-Proceedings of the London Mathematical Society 107(3).
+Proceedings of the London Mathematical Society 107(3), pp. 627-654.
 
 \bibitem{R-S} Remmert R., Stein, K. (1953) \textit{Über die wesentlichen
 Singulariäten analyscher Mengen}. Math. Annalen, Bd. 126, S. 263--306.
 
-\bibitem{G-R} Robert C. (1965) \textit{Analytic Functions of Several
-Complex Variables}, Prentice-Hall, Inc, Englewood Cliffs, N.J.
-
-\bibitem{Rudin} Rudin W. (1980) \textit{Function Theory in the Unit Ball of
-$\con$}, Springer-Verlag Berlin Heidelberg.
-
 \bibitem{GAGA} Serre, J.-P. (1956) \textit{G\'eom\'etrie alg\'ebrique et
-g\'eom\'etrie analytique}, Annales de l'institut Fourier, Vol. 6. 
+g\'eom\'etrie analytique}, Annales de Institut Fourier, Vol. 6, pp. 1-42. 
 
 \bibitem{Myers} Myers, S. B. (1941), \textit{Riemannian manifolds with positive mean curvature}, Duke Mathematical Journal, 
 8 (2): 401–404.
 
-\bibitem{SCHARK} Schark, I. J. \textit{Maximal Ideals in an Algebra of Bounded Analytic Functions}, The Institute for Advanced Study
-Princeton, New Jersey.
+\bibitem{SCHARK} Schark, I. J.(1961), \textit{Maximal Ideals in an Algebra of Bounded Analytic Functions}, The Institute for Advanced Study
+Princeton, New Jersey,pp. 735-746.
 
 \bibitem{Stolzenberg} Stolzenberg G. (1966) \textit{Volumes, Limits and
 Extensions of Analytic Varieties}, Lecture Notes in Mathematics,
 Springer-Verlag, Berlin. 
 
-\bibitem{Thurston} Thurston W., P. (1974) \textit{A Generalization of Reeb Stability Theorem}, Topology Vol. 13.pp. 347-352.
-Pergamon Press, Great Britain.
+\bibitem{Thurston} Thurston W., P. (1974) \textit{A Generalization of Reeb Stability Theorem}, Topology Vol. 13,
+Pergamon Press, Great Britain, pp. 347-352.
 
-\bibitem{Pereira} Pereira J. V., (2001) \textit{Global Stability for Holomorphic Foliations in Kaehler Maniforlds}. 
-Qualitative Theory of Dynamical Systems volume 2, pages 381–384.
+\bibitem{Pereira} Pereira J. V., (2001) \textit{Global Stability for Holomorphic Foliations in Kaehler Manifolds}.
+Qualitative Theory of Dynamical Systems volume 2, pp. 381–384.
 
 \bibitem{S-Yau} Yau, S-T., (1978) \textit{On The Ricci Curvature of a Compact K\"ahler Manifold and the Complex Monge-Amp\`ere Equation, I*},
-Communications on Pure and Applied Mathenatics, Vol. XXXXI, 339-411, John Wiley \& Sons. Inc.
+Communications on Pure and Applied Mathenatics, Vol. XXXXI, John Wiley \& Sons. Inc, 339-411.
 \end{thebibliography}
 
 \end{document}
