@@ -18,6 +18,7 @@ avance-de-investigacion.log
 avance-de-investigacion.pdf 
 avance-de-investigacion.synctex.gz 
 avance-de-investigacion.toc
+avance-de-investigacion.dvi
 Correciones Documento escaneado1.pdf
 Documento escaneado.pdf
 elsarticle
@@ -30,13 +31,17 @@ presentacion.snm
 presentacion.synctex.gz
 presentacion.toc
 protocoloFirmadaXGM.pdf
+presentacion.dvi
+presentacion.fdb_latexmk 
+presentacion.fls
 protocolo.pdf
 tematio.aux
 tematio.fdb_latexmk
 tematio.fls
 tematio.log
 tematio.pdf
-
+tematio.dvi
 tematio.synctex.gz 
 Documento escaneado1.pdf
 .auctex-auto
+correcciones-protocolo.pdf
