@@ -74,18 +74,20 @@ Presento los avances de las investigaciones realizadas durante los primeros cinc
 de mi precandidatura a estudiante doctoral.
 \end{block}
 \begin{block}{Objeto de estudio} Foliaciones holomorfas $\mathfrak{F}$ cuyas hojas cumplan con ciertas propiedades geom\'etricas que permiten garantizar regularidad en la estructura del espacio de hojas de la foliaci\'on.
+Se busca regularidad en espacio de hojas pues \'este normalmente es topol\'ogicamente complejo, es decir, existen muchos ejemplos no Hausdorff.
 \end{block}
 \end{frame}
 
 \begin{frame}
 \begin{block}{Avances}
-  Se busca regularidad en espacio de hojas pues \'este normalmente es topol\'ogicamente complejo (ejemplos no Hausdorff).
-  El ejemplo a presentar es el caso de foliaciones cuyas hojas tengan vol\'umenes acotados en variedades de K\"ahler $(M,h)$.
+  Presento el ejemplo de foliaciones cuyas hojas tengan vol\'umenes acotados en variedades de K\"ahler $(M,h)$.
   Los avances que tenemos se basan en trabajos de Erret Bishop \cite{Bishop} (1964) sobre extensiones y l\'imites de Hausdorff
   de sucesiones de variedades anal\'iticas y sigue el esp\'iritu de la presentaci\'on de los resultados de Bishop que se presentan en el
   libro ``Volumes, Limits and Extensions of Analytic Varieties'' de Gabriel Stolzenberg \cite{Stolzenberg}.
-  M\'as precisamente, hemos investigado maneras de extender el rango de las posibles aplicaciones de estos resultados a
-  distintas \'areas del an\'alisis complejo y la geometr\'ia compleja, con \'enfasis en la teor\'ia de foliaciones holomorfas.
+\end{block}
+\begin{block}{M\'as precisamente}
+Hemos investigado maneras de extender el rango de las posibles aplicaciones de estos resultados a
+distintas \'areas del an\'alisis complejo y la geometr\'ia compleja, con \'enfasis en la teor\'ia de foliaciones holomorfas.
 \end{block}
 \end{frame}
 
@@ -93,9 +95,9 @@ de mi precandidatura a estudiante doctoral.
 \begin{block}{Algunos resultados}
   En el trabajo ya realizado hemos encontrado conexiones entre teoremas conocidos del an\'alisis complejo y la geometr\'ia compleja e incluso hemos
   escrito un pequeño art\'iculo de divulgaci\'on con estos hallazgos, el cual por el momento se encuentra en una etapa de correcciones
-  y posibles expansiones. Uno de los primeros hallazgos de estas conexiones es, por ejemplo, una pueba novedosa del teorema
-  de Chow.
+  y posibles expansiones.
 \end{block}
+Uno de los primeros hallazgos de estas conexiones es, por ejemplo, una pueba novedosa del teorema de Chow.
 \begin{block}{Teorema de Chow (1949)}\label{Chow}
         Todo subespacio cerrado anal\'itico del espacio proyectivo complejo $\cp^{n}$ es algebraico.
 \end{block}
@@ -103,130 +105,67 @@ de mi precandidatura a estudiante doctoral.
 
 \section{Resultados de Bishop: Variedades anal\'iticas y algebraicas}
 \begin{frame}
-  \begin{block}{Definimos una variedad \emph{espacio anal\'itico} o \emph{variedad anal\'itica}}
+  \begin{block}{Variedad analítica}
     Un espacio topol\'ogico Hausdorff $X$ paracompacto con una estructura anillada $\mathcal{H}_X$, es decir, una
     gavilla de anillos en $X$ que es localmente isomorfa a un subconjunto anal\'itico de $\con$.
   \end{block}
-  \begin{block}{Definici\'on}
-    Similarmente, la definici\'on de conjunto algebraico se obtiene reemplazando el anillo de funciones anal\'iticas $\mathcal{H}(U)$ con el anillo de polinomios en $\con$ denotado por $\co[z_1,\dots,z_n]$.
-  \end{block}
+    Similarmente, la definici\'on de conjunto algebraico se obtiene reemplazando el anillo de funciones anal\'iticas con el anillo de polinomios en $n$ variables.
 \end{frame}
 \begin{frame}
-    La demostraci\'on que hicimos de este resultado se basa en el siguite teorema de Bishop:\\
+    La demostraci\'on que hicimos de este resultado se basa en el siguite teorema:\\
       \begin{block}{Primer teorema de Bishop}\label{Bishop1}
         Sea $X\subset\con$ una subvariedad anal\'itica de dimensi\'on compleja pura $k$, si para toda $R\in\re^+$
-        $$\textrm{Vol}_{2k}(X\cap B_R(0))\leq CR^{2k},$$
+        \[
+          \textrm{Vol}_{2k}(X\cap B_R(0))\leq CR^{2k},
+        \]
         donde $B_R(0)$ denota a la bola centrada en el origen de radio $R$, $C\in\re^{+}$ es una constante positiva
         y $\textrm{Vol}_{2k}$ es el volumen de dimensi\'on $2k$. Entonces $X$ es algebraica.
       \end{block}
 \end{frame}
 
 \subsection{El teorema secuencial de Bishop y el teorema de Montel}
+
 \begin{frame}
+      Notamos que el primer teorema de Bishop es muy similar a el teorema de Liouville en el caso del crecimiento radial de una función analílica. Esto nos llevó a considerar el siguinte teorema
       \begin{block}{Segundo teorema de Bishop (teorema secuencial)}\label{Bishop2}
         Sea $\{ V_n \}_{n\in\nat}$ una sucesi\'on de subvariedades anal\'iticas de dimensi\'on compleja pura $k$ de una regi\'on
         $\Omega\subset\con$ con volumen uniformemente acotado por una constante $C\in\re^{+}$.
         Si $V_n\rightarrow V$ converge a un cerrado $V\subset\con$ en el sentido de Hausdorff, entonces $V$ es una
         variedad anal\'itica.
       \end{block}
-\begin{block}{Observaci\'on}
-      Convergencia de una sucesi\'on de conjuntos $S_n\rightarrow S$ \emph{en el sentido de Hausdorff} para conjuntos cerrados de un espacio m\'etrico $(X,d)$
-      sucede cuando $S_n\cap K\rightarrow S\cap K$ en la m\'etrica de Hausdorff $d_H$ para todo $K\subset X$ compacto.
-\end{block}
+      Como una versión del teorema de Montell.
 \end{frame}
 
 \begin{frame}
-\begin{block}{Recordamos}
-  Que una familia de funciones $F$ es \textit{normal} si y s\'olo si su cerradura es secuencialmente compacta.
-\end{block}
 \begin{block}{Teorema de Montel}\label{Montel}
         Sea $B\subset\con$ la bola unitaria, si $\mathcal{H}(\overline{B})$ es el \'algebra de Banach de funciones holomorfas que son continuas
         en la frontera de $B$, entonces toda familia de funciones localmente acotadas $F\subset\mathcal{H}(\overline{B})$ es una familia \textit{normal}.
       \end{block}
-    \end{frame}
+      \begin{block}{Recordatorio}
+        \begin{itemize}
+          \item Convergencia de una sucesi\'on de conjuntos cerrados $S_n\rightarrow S$ \emph{en el sentido de Hausdorff} implica $S_n\cap K\rightarrow S\cap K$ en la m\'etrica de Hausdorff $d_H$ para todo $K$ compacto.
+          \item Una familia de funciones $F$ es \textit{normal} si y s\'olo si su cerradura es secuencialmente compacta.
+        \end{itemize}
+    \end{block}
+\end{frame}
 \begin{frame}
-  El resultado de montel es equivalente a una versi\'on de el terema secuencial de Bishop ya que es equivalente a la siguiente proposici\'on:
+  Se demostró que el resultado de montel es equivalente a la siguiente proposici\'on:
 \begin{block}{Teorema}
   Sea $\lbrace\Gamma_i\rbrace$ una sucesi\'on de gr\'aficas de funciones holomorfas uniformemente acotadas, $f_i:\Delta\rightarrow\co$ tales que
   $\Gamma_i\overset{d_H}\longrightarrow\Gamma$ (convergencia de Hausdorff),donde $\Gamma\subset\co^2$ es un subconjunto cerrado y $\Delta$es el disco unitario
     en $\co$, entonces $\Gamma$ es la gr\'afica de una funci\'on holomorfa.
 \end{block}
 \end{frame}
-%%\subsection{Similitudes entre teoremas cl\'asicos de an\'alisis complejo y los resultados de Bishop}
-%%
-%%\begin{table}[hpt]
-%%        \caption{Tabla con similitudes entre teoremas cl\'asicos de variable compleja y los teoremas de Bihop.}\label{Tab}
-%%        \centering
-%%        \begin{tabular}{|m{5.5cm}|m{5.5cm}|} \hline
-%%                        \begin{center} \vspace*{0.2cm}
-%%                                \underline{\textbf{An\'alisis Complejo}}
-%%                        \end{center} &
-%%                        \begin{center} \vspace*{0.2cm}
-%%                                \underline{\textbf{Conjuntos anal\'iticos en $\con$}}
-%%                        \end{center} \\
-%%                \hline
-%%                \begin{center}
-%%                        Teorema de Liouville.
-%%                \end{center} &
-%%                \begin{center}
-%%                        Teorema de Bishop (Teorema \ref{Bishop1}).
-%%                \end{center}\\
-%%                        \hline Si $\vert f(z)\vert\leq C\,R^k$ en el conjunto $\{\vert z\vert\leq R\}$
-%%                        para todo $R\in\re^{+}$con $f$ entera y $k\in\zah^{+}$, entonces
-%%                        $f$ es un polinomio.
-%%                        &
-%%                        \vspace{0.1cm}
-%%                        Si $\textrm{Vol}_{2k}(X\cap B(R,0))\leq CR^{2k}$ para todo
-%%                        $R\in\re^{+}$, donde $X$ es una subvariedad anal\'itica en $\con$, entonces $X$ es algebraica.\\
-%%                        \hline
-%%                        \vspace{0.1cm}
-%%                        \begin{center}
-%%                        Teorema de extensi\'on de Riemann.
-%%                \end{center}
-%%                        &
-%%                \begin{center}
-%%                        Generalizaci\'on del teorema de Remmert-Stein de Bishop (v\'ease \cite{R-S} y \cite[p. 34]{Stolzenberg}).
-%%                \end{center} \\
-%%                        \hline Si $f:(\Omega\setminus E)\subset\co\rightarrow\co$ es una funci\'on holomorfa y $E$ es un subconjunto
-%%                        compacto de capacidad $0$, entonces $f$ es extendible a una funci\'on holomorfa
-%%                        en la regi\'on completa $\Omega$.
-%%                        &
-%%                        \vspace{0.1cm}
-%%                        Sea $U\subset\con$ un abierto acotado de $\con$ y sea $B\subset U$ un subconjunto cerrado
-%%                        tal que $X\subset U\setminus B$ es una subvariedad de dimensi\'on pura $k$ tal que $B\subset\overline{X}$.
-%%                        Si $B$ tiene capacidad $0$ relativa al \'algebra de funciones anal\'iticas en $X$ que son
-%%                        continuas en $\overline{X}$ y si existe una funci\'on $f:U\rightarrow\co^k$ propia en $B$ tal que $f(B)$
-%%                        no sea un subconjunto abierto conexo de $\co^k$, entonces $\overline{X}\cap U$ es un subconjunto anal\'itico
-%%                        de $U$ (v\'ease \cite[teorema 4]{Bishop}).\\
-%%                        \hline
-%%                \begin{center}
-%%                        Teorema de compacidad de Montel.
-%%                \end{center}
-%%                        &
-%%                \begin{center}
-%%                Teorema de sucesiones de variedades anal\'iticas con volumen uniformemente acotado de Bishop.
-%%                \end{center}\\
-%%                \hline
-%%                \vspace{0.1cm}
-%%                Sea $\lbrace\Gamma_i\rbrace$ una sucesi\'on de gr\'aficas de funciones holomorfas uniformemente
-%%                acotadas, $f_i:\Delta\rightarrow\co$ tales que $\Gamma_i\overset{d_H}\longrightarrow\Gamma$ (convergencia de Hausdorff),
-%%                donde $\Gamma\subset\co^2$ es un subconjunto cerrado y $\Delta$ es el disco unitario en $\co$,
-%%                entonces $\Gamma$ es la gr\'afica de una funci\'on holomorfa.
-%%                        &
-%%                Sea $\lbrace V_i\rbrace$ una sucesi\'on de subvariedades anal\'iticas de $\Omega\subset\con$ con vol\'umenes
-%%                uniformemente acotados tales que $V_i\overset{d_H}\longrightarrow V\subset\Omega$ en el sentido de Hausdorff, entonces
-%%                $V$ es una subvariedad anal\'itica de $\con$ (\cite[p. 30]{Stolzenberg}). \\ \hline
-%%        \end{tabular}
-%%\end{table}
 
 \section{L\'imites de hojas compactas de foliaciones en Variedades K\"ahler}
 \subsection{Variedades K\"ahler, foliaciones y sus vol\'umenes}
 
 \begin{frame}
+  Además de provar resultados de análisis complejo, utilizamos los reultados de Bishop para investigar foliaciones holomorfas en variedades Kähler.
 \begin{block}{Recordamos}
-Se define una variedad de K\"ahler como una variedad compleja $(M,I)$ con una estructura adicional hermitiana $h=g-i\omega$ tal que la (1,1)-forma definida por $\omega=-\Im (h)$ sea cerrada $d\,\omega=0$. A dicha forma cerrada se le denota como \emph{forma de K\"ahler}.
+Una variedad de K\"ahler es una variedad compleja $M$ con una métrica hermitiana $h=g-i\omega$ tal que su (1,1)-forma $\omega$ es cerrada $d\omega=0$. A dicha forma cerrada se le denota como \emph{forma de K\"ahler}.
 \end{block}
-\begin{block}{Ejemplos}
+\begin{block}{Ejemplo}
 $\con$ con el producto punto hermitiano tradicional y $\cp^{n}$ con la m\'etrica conocida como m\'etrica de Fubini-Study:
 \[
     \omega=\frac{i}{2}\partial\overline{\partial}\log(|Z|^{2})=\frac{i}{2}\partial\overline{\partial}\log(1+|\zeta|^{2}).
@@ -235,17 +174,15 @@ $\con$ con el producto punto hermitiano tradicional y $\cp^{n}$ con la m\'etrica
 \end{frame}
 
 \begin{frame}
-  \begin{block}{Foliaciones holomorfas}
-  Una foliaci\'on holomorfa $\mathfrak{F}$ en una variedad compleja $(M,I)$ de dimensi\'on compleja $n$ es una distribuci\'on involutiva de
-  subespacios del haz tangente  con dimensi\'on compleja constante $k$. Geom\'etricamente se describe a la foliaci\'on como una
-  partici\'on de $M=\bigcup\mathcal{L}_z$, donde cada $\mathcal{L}_z$ es una subvariedad holomorfa de $(M,I)$ de una dimensi\'on dada.
+  \begin{block}{Foliaciones holomorfa}
+  Una foliaci\'on holomorfa $\mathfrak{F}$ en una variedad compleja $M$ de dimensi\'on compleja $n$ es una distribuci\'on involutiva de
+  subespacios del haz tangente con dimensi\'on compleja constante $k$. Geom\'etricamente piensa a la foliaci\'on como una
+  partici\'on de $M=\bigcup\mathcal{L}_z$, donde cada $\mathcal{L}_z$ es una subvariedad holomorfa de $M$ de dimensi\'on $k$.
 \end{block}
 
 \begin{block}{Holonom\'ia}
   Se define la holonom\'ia de una hoja de la foliaci\'on $\mathcal{L}$ como el morfismo de grupos $H:\pi_{1}(\mathcal{L})
   \rightarrow\textrm{Bih}(\co^{n-k},0)$ definido por la acci\'on de curvas cerradas en la din\'amica transversa.
-  Donde $\pi_{1}$ denota al grupo fundamental de un espacio topol\'ogico y $\textrm{Bih}(\co^{n-k},0)$ es el grupo de
-  g\'ermenes de biholomorfismos centrados en $0$ de $\co^{n-k}$.
 \end{block}
 \end{frame}
 
@@ -458,7 +395,7 @@ pero con el enfoque particular de variedades de Poisson.
         \]
       \end{block}
 \end{frame}
-\begin{frame}  Este teorema define claramente una foliaci\'on natural en $(M,\pi)$ de hojas
+\begin{frame} Este teorema define claramente una foliaci\'on natural en $(M,\pi)$ de hojas
 simpl\'ecticas. Sin embargo, no todas son de las misma dimensi\'on, por lo que es necesario notar que la definici\'on de foliaci\'on
 se puede expandir a este contexto m\'as general, es decir, una foliaci\'on es simplemente un $\mathcal{O}_M$-subm\'odulo de $\mathcal{T}M$ involutivo.
 \begin{block}{Esto define una filtraci\'on}
@@ -481,17 +418,17 @@ luminar con nueva informaci\'on utilizando la funci\'on volumen.
 \begin{block}{Variedad Fano}
 \begin{itemize}
             \item $M$ admite una m\'etrica de K\"ahler-Einstein
-                $$
+                \[
                 \textrm{Ric}_{\omega}=\lambda\omega\hspace{0.2cm}\lambda\in\re,
-                $$
-                $$
+                \]
+                \]
                     \textrm{Ric}_{\omega}=\frac{i}{2\pi}\sum_{ij}R_{i\overline{j}}\,dz_i\wedge
                     d\overline{z}_j=\frac{-i}{2\pi}\partial\overline{\partial}\log(\det(h_{k\overline{l}})).
-                $$
+                \]
             \item La primera clase de Chern es positiva
-            $$
+            \[
                     [\textrm{Ric}_{\omega}]=c_1(M)>0.
-            $$
+            \]
 \end{itemize}
 \end{block}
 \end{frame}
@@ -514,11 +451,10 @@ luminar con nueva informaci\'on utilizando la funci\'on volumen.
     previos de Yau \cite{S-Yau} y sobre todo Donaldson y Sun \cite{D-SS}. En particular, Donaldson y Sun muestran resultados de naturaleza muy similar
     a los resultados de Bishop (teorema \ref{Bishop2}) en el contexto generalizado de l\'imites de Gromov-Hausdorff en variedades de
     K\"ahler, con particular aplicaci\'on a las variedades de Fano.
-  %% \begin{itemize}
 %%%  \textcolor{red}{\centerline{Problema a resolver, hip\'otesis:}}
 
 %%Nosotros creemos que es posible demostrar la proposici\'on de Druel, Pereira, Pym y Touzet utilizando l\'imites de las hojas
-%%de forma similar a la previamente expuesta. M\'as sobre esto se expondr\'a en la secci\'on de \textit{Problemas a resolver}.
+%%de forma similar a la previamente expuesta.
 %%
 %%        \item En el caso de la conjetura de Beauville \ref{Beauville}, pretendemos primero demostrar el caso en el que
 %%        las hojas sean compactas, utilizando los m\'etodos de Bishop. As\'i obendr\'iamos una demostraci\'on alternativa al
